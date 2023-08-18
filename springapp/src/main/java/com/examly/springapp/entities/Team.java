@@ -6,8 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
-@Data
-@AllArgsConstructor
 public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
