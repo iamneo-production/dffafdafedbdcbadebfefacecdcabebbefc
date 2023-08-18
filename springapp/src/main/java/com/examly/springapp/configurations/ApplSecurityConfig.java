@@ -59,7 +59,7 @@ public class ApplSecurityConfig {
 	@Bean
 	public CorsConfigurationSource corsConfigurationSource() {
 	    CorsConfiguration configuration = new CorsConfiguration();
-	    configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200")); // Allow your frontend's origin
+	    configuration.setAllowedOrigins(Arrays.asList("https://8081-dffafdafedbdcbadebfefacecdcabebbefc.premiumproject.examly.io/")); // Allow your frontend's origin
 	    configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
 	    configuration.setAllowedHeaders(Arrays.asList("*"));
 	    configuration.setAllowCredentials(true);
