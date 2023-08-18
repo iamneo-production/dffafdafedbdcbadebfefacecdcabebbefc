@@ -7,7 +7,7 @@ import { catchError, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:8080/api'; // Replace with your Spring Boot backend URL
+  private baseUrl = 'https://8080-dffafdafedbdcbadebfefacecdcabebbefc.premiumproject.examly.io/api'; // Replace with your Spring Boot backend URL
 
   constructor(private http: HttpClient) { }
 

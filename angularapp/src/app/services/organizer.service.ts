@@ -8,7 +8,7 @@ import { Team } from '../../models/team.model';
   providedIn: 'root'
 })
 export class OrganizerService {
-  private baseUrl = 'http://localhost:8080/api/organizer'; // Replace with your Spring Boot backend URL
+  private baseUrl = 'https://8080-dffafdafedbdcbadebfefacecdcabebbefc.premiumproject.examly.io/api/organizer'; // Replace with your Spring Boot backend URL
 
   constructor(private http: HttpClient) { }
 
@@ -17,7 +17,7 @@ export class OrganizerService {
   }
 
   getTeams(): Observable<Team[]> {
-    return this.http.get<Team[]>(`http://localhost:8080/api/admin/teams`);
+    return this.http.get<Team[]>(`https://8080-dffafdafedbdcbadebfefacecdcabebbefc.premiumproject.examly.io/api/admin/teams`);
   }
 
   assignPlayerToTeam(playerId: number, teamId: number): Observable<any> {
